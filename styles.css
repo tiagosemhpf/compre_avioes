@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.about img {
+    max-width: 100%;
+    margin-right: 20px;
+    flex: 1 1 300px;
+}
+
+.about-text {
+    flex: 2 1 600px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+button {
+    background-color: #3366cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2851a3;
+}
+
+/* Responsividade */
+@media (max-width: 1023px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .product-list {
+        justify-content: center;
+    }
+
+    .product-item {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .product-item {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
